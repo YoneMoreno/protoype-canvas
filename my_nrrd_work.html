@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Prototype: three.js without react.js</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+    
+        <!-- load the libraries and js -->
+		<script src="js/libs/three.js"></script>
+    
+        <script src="js/Volume.js"></script>
+        <script src="js/VolumeSlice.js"></script>
+        <script src="js/loaders/NRRDLoader.js"></script>
+
+        <script src="js/Detector.js"></script>
+        <script src="js/libs/stats.min.js"></script>
+        <script src="js/libs/gunzip.min.js"></script>
+        <script src="js/libs/dat.gui.min.js"></script>
+    
+        <script src="js/InitCanvas.js"></script>
+        
+
+	</head>
+
+	<body>
+		<div id="info">
+			<h1>Prototype: three.js without react.js</h1> 
+        </div>
+        
+        <!-- two canvas -->
+        <div class="row">
+            <div class="column" id="original">
+            </div>
+           
+            <div class="column" id="segment">
+            
+            </div>
+          </div> 
+
+        <script src="js/logic.js"></script>
+
+	</body>
+</html>

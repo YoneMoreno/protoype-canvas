@@ -1,0 +1,27 @@
+body {
+    font-family: Monospace;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#info {
+    color: rgb(137, 145, 192);
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+    display:block;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
