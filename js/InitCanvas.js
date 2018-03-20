@@ -18,9 +18,10 @@ InitCanvas.prototype = {
     init: function() {
 
         this.container = document.getElementById( this.IdDiv );
-        
-        // this should be changed. 
-        this.container.innerHeight = 600; 
+
+        // this should be changed.
+        debugger;
+        this.container.innerHeight = 600;
         this.container.innerWidth = 800;
 
         //These statenments should be changed to improve the image position
@@ -46,9 +47,13 @@ InitCanvas.prototype = {
     
             //z plane
             let sliceZ = volume.extractSlice('z',Math.floor(volume.RASDimensions[2]/4));
-            
+
+            debugger;
+            this.container.innerWidth = sliceZ.iLength;
+            this.container.innerHeight = sliceZ.jLength;
+
             scene.add( sliceZ.mesh );
-        } );
+        }.bind(this) );
 
         
         this.scene = scene;
@@ -57,6 +62,7 @@ InitCanvas.prototype = {
 
         this.renderer = new THREE.WebGLRenderer( { alpha: true } );
         this.renderer.setPixelRatio( this.container.devicePixelRatio );
+        debugger;
         this.renderer.setSize( this.container.innerWidth, this.container.innerHeight );
         
         // add canvas in container
