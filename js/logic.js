@@ -1,55 +1,64 @@
-if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
+if (!Detector.webgl) Detector.addGetWebGLMessage();
 
 // global variables for this scripts
-let OriginalImg, 
+let OriginalImg,
     SegmentImg;
 
 var mouse = new THREE.Vector2();
 var raycaster = new THREE.Raycaster();
 var mousePressed = false;
-
+var clickCount = 0;
 
 
 init();
 animate();
 
-  
+
 // initilize the page
-function init ()
-{
+function init() {
     let filename = "models/nrrd/columna01.nrrd"; // change your nrrd file
     let idDiv = 'original';
-    OriginalImg = new InitCanvas(idDiv, filename );
+    OriginalImg = new InitCanvas(idDiv, filename);
     OriginalImg.init();
     console.log(OriginalImg);
-    
+
     filename = "models/nrrd/columnasegmentado01.nrrd"; // change your nrrd file
     idDiv = 'segment';
-    SegmentImg = new InitCanvas(idDiv, filename );
-    SegmentImg.init(); 
+    SegmentImg = new InitCanvas(idDiv, filename);
+    SegmentImg.init();
 }
 
-document.addEventListener( 'mousedown', onDocumentMouseDown, false );
-document.addEventListener( 'mouseup', onDocumentMouseUp, false );
+let originalCanvas = document.getElementById('original');
+originalCanvas.addEventListener('mousedown', onDocumentMouseDown, false);
+originalCanvas.addEventListener('mouseup', onDocumentMouseUp, false);
 
-function onDocumentMouseDown( event ) {
+
+function onDocumentMouseDown(event) {
     mousePressed = true;
-    mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
-    mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
-    raycaster.setFromCamera( mouse.clone(), OriginalImg.camera );
+
+    clickCount++;
+
+    mouse.x = ( ( event.clientX - OriginalImg.renderer.domElement.offsetLeft ) / OriginalImg.renderer.domElement.clientWidth ) * 2 - 1;
+    mouse.y = - ( ( event.clientY - OriginalImg.renderer.domElement.offsetTop ) / OriginalImg.renderer.domElement.clientHeight ) * 2 + 1
+
+    console.log('Mouse x position is: ', mouse.x, 'the click number was: ', clickCount);
+    console.log('Mouse Y position is: ', mouse.y);
+
+    raycaster.setFromCamera(mouse.clone(), OriginalImg.camera);
     var objects = raycaster.intersectObjects(OriginalImg.scene.children);
+
     console.log(objects);
 }
-function onDocumentMouseUp( event ) { mousePressed = false}
 
-
-
+function onDocumentMouseUp(event) {
+    mousePressed = false
+}
 
 
 function animate() {
 
 
-    requestAnimationFrame( animate );
+    requestAnimationFrame(animate);
     OriginalImg.animate();
     SegmentImg.animate();
 

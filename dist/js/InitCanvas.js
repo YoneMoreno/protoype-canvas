@@ -51,6 +51,10 @@ InitCanvas.prototype = {
                         this.container.innerWidth = sliceZ.iLength;
                         this.container.innerHeight = sliceZ.jLength;
 
+                        sliceZ.mesh.material.color.setRGB(0, 1, 1);
+
+                        console.log('Our slice is: ', sliceZ);
+
                         scene.add(sliceZ.mesh);
                 }.bind(this));
 

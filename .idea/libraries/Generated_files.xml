@@ -2,13 +2,13 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/dist/js/InitCanvas.js" />
         <item url="file://$PROJECT_DIR$/dist/js/logic.js" />
+        <item url="file://$PROJECT_DIR$/dist/js/InitCanvas.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/dist/js/InitCanvas.js" />
       <root url="file://$PROJECT_DIR$/dist/js/logic.js" />
+      <root url="file://$PROJECT_DIR$/dist/js/InitCanvas.js" />
     </CLASSES>
     <SOURCES />
   </library>

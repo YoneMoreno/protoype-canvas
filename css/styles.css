@@ -25,3 +25,13 @@ body {
     display: table;
     clear: both;
 }
+
+canvas {
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+    padding: 0px;
+    position: static; /* fixed or static */
+    top: 100px;
+    left: 100px;
+}
