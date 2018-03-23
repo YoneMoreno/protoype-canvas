@@ -16,6 +16,7 @@ animate();
 readTextFile("columna01-es-latin1.txt");
 
 
+
 // initilize the page
 function init() {
 
@@ -83,8 +84,19 @@ function readTextFile(file)
             {
                  allText = rawFile.responseText;
                     console.log(allText);
+                    intoArray(allText);
             }
         }
     }
     rawFile.send(null);
+}
+
+function intoArray (lines) {
+    // splitting all text data into array "\n" is splitting data from each new line
+    //and saving each new line as each element*
+
+    var lineArr = lines.split('\n');
+
+    //just to check if it works output lineArr[index] as below
+    //console.log(lineArr[0]);
 }

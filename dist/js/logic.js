@@ -71,9 +71,20 @@ function readTextFile(file) {
             if (rawFile.status === 200 || rawFile.status == 0) {
                 allText = rawFile.responseText;
                 console.log(allText);
+                intoArray(allText);
             }
         }
     };
     rawFile.send(null);
+}
+
+function intoArray(lines) {
+    // splitting all text data into array "\n" is splitting data from each new line
+    //and saving each new line as each element*
+
+    var lineArr = lines.split('\n');
+
+    //just to check if it works output lineArr[index] as below
+    //console.log(lineArr[0]);
 }
 //# sourceMappingURL=logic.js.map
