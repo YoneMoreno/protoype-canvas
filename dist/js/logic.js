@@ -70,7 +70,7 @@ function readTextFile(file) {
         if (rawFile.readyState === 4) {
             if (rawFile.status === 200 || rawFile.status == 0) {
                 allText = rawFile.responseText;
-                console.log(allText);
+                console.log('The complete text is', allText);
                 intoArray(allText);
             }
         }
@@ -85,6 +85,19 @@ function intoArray(lines) {
     var lineArr = lines.split('\n');
 
     //just to check if it works output lineArr[index] as below
-    //console.log(lineArr[0]);
+    console.log('Our  first line is: ', lineArr[0]);
+
+    intoWords(lineArr[0]);
+}
+
+function intoWords(line) {
+
+    var wordsArr = line.split('" "');
+
+    for (var i = 0; i < wordsArr.length; i++) {
+        console.log("Our " + i + " word is : " + wordsArr[i]);
+    }
+
+    return wordsArr;
 }
 //# sourceMappingURL=logic.js.map
