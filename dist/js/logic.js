@@ -46,6 +46,21 @@ function onDocumentMouseDown(event) {
     raycaster.setFromCamera(mouse.clone(), OriginalImg.camera);
     var objects = raycaster.intersectObjects(OriginalImg.scene.children);
 
+    var pointGeometry = new THREE.Geometry();
+
+    var position = new THREE.Vector3();
+    position.x = objects[0].point.x;
+    position.y = objects[0].point.y;
+    position.z = objects[0].point.z;
+
+    pointGeometry.vertices.push(position);
+
+    var pointMaterial = new THREE.PointsMaterial({ color: 0x888888 });
+
+    var point = new THREE.Points(pointGeometry, pointMaterial);
+
+    OriginalImg.scene.add(point);
+
     console.log(objects);
 }
 

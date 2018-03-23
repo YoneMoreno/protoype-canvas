@@ -39,13 +39,30 @@ function onDocumentMouseDown(event) {
     clickCount++;
 
     mouse.x = ( ( event.clientX - OriginalImg.renderer.domElement.offsetLeft ) / OriginalImg.renderer.domElement.clientWidth ) * 2 - 1;
-    mouse.y = - ( ( event.clientY - OriginalImg.renderer.domElement.offsetTop ) / OriginalImg.renderer.domElement.clientHeight ) * 2 + 1
+    mouse.y = -( ( event.clientY - OriginalImg.renderer.domElement.offsetTop ) / OriginalImg.renderer.domElement.clientHeight ) * 2 + 1
 
     console.log('Mouse x position is: ', mouse.x, 'the click number was: ', clickCount);
     console.log('Mouse Y position is: ', mouse.y);
 
     raycaster.setFromCamera(mouse.clone(), OriginalImg.camera);
     var objects = raycaster.intersectObjects(OriginalImg.scene.children);
+
+    var pointGeometry = new THREE.Geometry();
+
+
+    var position = new THREE.Vector3();
+    position.x = objects[0].point.x;
+    position.y = objects[0].point.y;
+    position.z = objects[0].point.z;
+
+    pointGeometry.vertices.push(position);
+
+
+    var pointMaterial = new THREE.PointsMaterial({color: 0x888888});
+
+    var point = new THREE.Points(pointGeometry, pointMaterial);
+
+    OriginalImg.scene.add(point);
 
     console.log(objects);
 }
