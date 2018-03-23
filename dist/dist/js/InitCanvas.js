@@ -20,7 +20,6 @@ InitCanvas.prototype = {
                                 this.container = document.getElementById(this.IdDiv);
 
                                 // this should be changed.
-                                debugger;
                                 this.container.innerHeight = 600;
                                 this.container.innerWidth = 800;
 

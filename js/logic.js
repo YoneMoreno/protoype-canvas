@@ -8,14 +8,20 @@ var mouse = new THREE.Vector2();
 var raycaster = new THREE.Raycaster();
 var mousePressed = false;
 var clickCount = 0;
+var allText;
 
 
 init();
 animate();
+readTextFile("columna01-es-latin1.txt");
 
 
 // initilize the page
 function init() {
+
+
+
+
     let filename = "models/nrrd/columna01.nrrd"; // change your nrrd file
     let idDiv = 'original';
     OriginalImg = new InitCanvas(idDiv, filename);
@@ -63,4 +69,22 @@ function animate() {
     SegmentImg.animate();
 
 
-}   
+}
+
+function readTextFile(file)
+{
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                 allText = rawFile.responseText;
+                    console.log(allText);
+            }
+        }
+    }
+    rawFile.send(null);
+}
