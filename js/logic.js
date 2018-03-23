@@ -16,11 +16,8 @@ animate();
 readTextFile("columna01-es-latin1.txt");
 
 
-
 // initilize the page
 function init() {
-
-
 
 
     let filename = "models/nrrd/columna01.nrrd"; // change your nrrd file
@@ -46,7 +43,7 @@ function onDocumentMouseDown(event) {
     clickCount++;
 
     mouse.x = ( ( event.clientX - OriginalImg.renderer.domElement.offsetLeft ) / OriginalImg.renderer.domElement.clientWidth ) * 2 - 1;
-    mouse.y = - ( ( event.clientY - OriginalImg.renderer.domElement.offsetTop ) / OriginalImg.renderer.domElement.clientHeight ) * 2 + 1
+    mouse.y = -( ( event.clientY - OriginalImg.renderer.domElement.offsetTop ) / OriginalImg.renderer.domElement.clientHeight ) * 2 + 1
 
     console.log('Mouse x position is: ', mouse.x, 'the click number was: ', clickCount);
     console.log('Mouse Y position is: ', mouse.y);
@@ -72,46 +69,48 @@ function animate() {
 
 }
 
-function readTextFile(file)
-{
+function readTextFile(file) {
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", file, false);
-    rawFile.onreadystatechange = function ()
-    {
-        if(rawFile.readyState === 4)
-        {
-            if(rawFile.status === 200 || rawFile.status == 0)
-            {
-                 allText = rawFile.responseText;
-                    console.log('The complete text is',allText);
-                    intoArray(allText);
+    rawFile.onreadystatechange = function () {
+        if (rawFile.readyState === 4) {
+            if (rawFile.status === 200 || rawFile.status == 0) {
+                allText = rawFile.responseText;
+                console.log('The complete text is', allText);
+                let lineArr = intoArray(allText);
+                let firstLineWords = intoWords(lineArr[0]);
+                let secondLineWords = intoWords(lineArr[1]);
+
+                console.log('Our  first line is: ', lineArr[0]);
+                for (let i = 0; i < firstLineWords.length; i++) {
+                    console.log(`Our ${i} word in the first line is : ${firstLineWords[i]}`);
+                    console.log(`Our ${i} word in the SECOND line is : ${secondLineWords[i]}`);
+                }
             }
         }
     }
     rawFile.send(null);
 }
 
-function intoArray (lines) {
+function intoArray(lines) {
     // splitting all text data into array "\n" is splitting data from each new line
     //and saving each new line as each element*
 
     var lineArr = lines.split('\n');
 
     //just to check if it works output lineArr[index] as below
-    console.log('Our  first line is: ',lineArr[0]);
 
-    intoWords(lineArr[0]);
+
+    return lineArr;
+
+
 }
 
-function intoWords (line) {
+function intoWords(line) {
 
 
-    var wordsArr= line.split('" "');
+    var wordsArr = line.split('" "');
 
-
-    for(let i = 0; i < wordsArr.length; i++){
-        console.log(`Our ${i} word is : ${wordsArr[i]}` );
-    }
 
     return wordsArr;
 }
