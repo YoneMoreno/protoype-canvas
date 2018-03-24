@@ -19,8 +19,8 @@ animate();
 // initilize the page
 function init() {
 
-    myFileReader = new MyFileReader();
-    myFileReader.readTextFile("columna01-es-latin1.txt");
+
+    readTextFile("columna01-es-latin1.txt");
 
 
     let filename = "models/nrrd/columna01.nrrd"; // change your nrrd file
