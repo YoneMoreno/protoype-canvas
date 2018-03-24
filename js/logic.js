@@ -82,10 +82,14 @@ function readTextFile(file) {
                 let secondLineWords = intoWords(lineArr[1]);
 
                 console.log('Our  first line is: ', lineArr[0]);
+
+                let atlas = {};
                 for (let i = 0; i < firstLineWords.length; i++) {
                     console.log(`Our ${i} word in the first line is : ${firstLineWords[i]}`);
                     console.log(`Our ${i} word in the SECOND line is : ${secondLineWords[i]}`);
+                    atlas[firstLineWords[i]] = secondLineWords[i];
                 }
+                console.log('The atlas is: ',atlas);
             }
         }
     }
