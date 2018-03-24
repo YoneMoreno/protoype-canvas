@@ -72,5 +72,5 @@ InitCanvas.prototype = {
                 }
 
 };
-//# sourceMappingURL=InitCanvas.js.map
-//# sourceMappingURL=InitCanvas.js.map
+//# sourceMappingURL=MyFileReader.js.map
+//# sourceMappingURL=MyFileReader.js.map
