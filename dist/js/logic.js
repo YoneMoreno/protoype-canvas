@@ -84,10 +84,22 @@ function readTextFile(file) {
                     atlas[firstLineWords[i]] = secondLineWords[i];
                 }
                 console.log('The atlas is: ', atlas);
+                var atlasJson = JSON.stringify(atlas);
+                console.log('Atlas as json is: ', atlasJson);
+
+                download(atlasJson, 'atlasJson.txt', 'text/plain');
             }
         }
     };
     rawFile.send(null);
+}
+
+// Function to download data to a file
+function download(text, name, type) {
+    var a = document.getElementById("a");
+    var file = new Blob([text], { type: type });
+    a.href = URL.createObjectURL(file);
+    a.download = name;
 }
 
 function intoArray(lines) {

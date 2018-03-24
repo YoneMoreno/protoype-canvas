@@ -89,12 +89,25 @@ function readTextFile(file) {
                     console.log(`Our ${i} word in the SECOND line is : ${secondLineWords[i]}`);
                     atlas[firstLineWords[i]] = secondLineWords[i];
                 }
-                console.log('The atlas is: ',atlas);
+                console.log('The atlas is: ', atlas);
+                let atlasJson = JSON.stringify(atlas);
+                console.log('Atlas as json is: ', atlasJson);
+
+                download(atlasJson, 'atlasJson.txt', 'text/plain');
             }
         }
-    }
+    };
     rawFile.send(null);
 }
+
+// Function to download data to a file
+function download(text, name, type) {
+    var a = document.getElementById("a");
+    var file = new Blob([text], {type: type});
+    a.href = URL.createObjectURL(file);
+    a.download = name;
+}
+
 
 function intoArray(lines) {
     // splitting all text data into array "\n" is splitting data from each new line
