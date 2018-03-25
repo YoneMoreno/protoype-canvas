@@ -24,6 +24,11 @@ body {
     left:0;
     top:60%;
 }
+.leftThirdRow{
+    position:absolute;
+    left:0;
+    top:70%;
+}
 
 .column {
     float: left;
