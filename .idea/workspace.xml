@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff8fec6e-ab22-4d3f-a409-b66de72707d8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna10.nrrd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna11.nrrd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna12.nrrd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado10.nrrd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado11.nrrd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado12.nrrd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna10.PNG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna11.PNG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna12.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna13.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna14.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna15.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado13.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado14.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado15.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna13.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna14.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna15.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna15.nrrd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_nrrd_work.html" afterPath="$PROJECT_DIR$/my_nrrd_work.html" />
@@ -30,8 +31,8 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="31" column="11" lean-forward="false" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+            <state relative-caret-position="549">
+              <caret line="39" column="9" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -50,8 +51,8 @@
       <file leaf-file-name="my_nrrd_work.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my_nrrd_work.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="64" column="41" lean-forward="false" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+            <state relative-caret-position="493">
+              <caret line="72" column="41" lean-forward="false" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -224,12 +225,12 @@
       <workItem from="1521661816194" duration="1849000" />
       <workItem from="1521740918361" duration="188000" />
       <workItem from="1521914110555" duration="994000" />
-      <workItem from="1521989647329" duration="3246000" />
+      <workItem from="1521989647329" duration="3762000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22023000" />
+    <option name="totallyTimeSpent" value="22539000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
@@ -671,16 +672,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="31" column="11" lean-forward="false" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        <state relative-caret-position="549">
+          <caret line="39" column="9" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my_nrrd_work.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="64" column="41" lean-forward="false" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+        <state relative-caret-position="493">
+          <caret line="72" column="41" lean-forward="false" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
           <folding />
         </state>
       </provider>

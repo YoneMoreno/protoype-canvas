@@ -17,22 +17,27 @@ body {
 .left {
     position:absolute;
     left:0;
-    top:50%;
+    top:10%;
 }
 .leftSecondRow{
     position:absolute;
     left:0;
-    top:60%;
+    top:20%;
 }
 .leftThirdRow{
     position:absolute;
     left:0;
-    top:70%;
+    top:30%;
 }
 .leftFourthRow{
     position:absolute;
     left:0;
-    top:80%;
+    top:40%;
+}
+.leftFifthRow{
+    position:absolute;
+    left:0;
+    top:50%;
 }
 
 .column {
