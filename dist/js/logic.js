@@ -21,13 +21,13 @@ function init() {
 
     readTextFile("columna01-es-latin1.txt");
 
-    var filename = "models/nrrd/columna01.nrrd"; // change your nrrd file
+    var filename = "models/nrrd/columna02.nrrd"; // change your nrrd file
     var idDiv = 'original';
     OriginalImg = new InitCanvas(idDiv, filename);
     OriginalImg.init();
     console.log(OriginalImg);
 
-    filename = "models/nrrd/columnasegmentado01.nrrd"; // change your nrrd file
+    filename = "models/nrrd/columnasegmentado02.nrrd"; // change your nrrd file
     idDiv = 'segment';
     SegmentImg = new InitCanvas(idDiv, filename);
     SegmentImg.init();
