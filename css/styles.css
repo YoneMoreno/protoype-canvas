@@ -29,6 +29,11 @@ body {
     left:0;
     top:70%;
 }
+.leftFourthRow{
+    position:absolute;
+    left:0;
+    top:80%;
+}
 
 .column {
     float: left;
