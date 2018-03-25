@@ -49,6 +49,11 @@ body {
     left:0;
     top:70%;
 }
+.leftEightRow{
+    position:absolute;
+    left:0;
+    top:80%;
+}
 
 .column {
     float: left;

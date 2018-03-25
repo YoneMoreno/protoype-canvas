@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff8fec6e-ab22-4d3f-a409-b66de72707d8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna19.nrrd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna20.nrrd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna21.nrrd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado19.nrrd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado20.nrrd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna19.PNG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna20.PNG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna21.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna22.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado22.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna22.PNG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_nrrd_work.html" afterPath="$PROJECT_DIR$/my_nrrd_work.html" />
@@ -29,8 +24,8 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="46" column="12" lean-forward="false" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+            <state relative-caret-position="515">
+              <caret line="54" column="9" lean-forward="false" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -49,8 +44,8 @@
       <file leaf-file-name="my_nrrd_work.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my_nrrd_work.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="88" column="41" lean-forward="false" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
+            <state relative-caret-position="459">
+              <caret line="91" column="126" lean-forward="false" selection-start-line="91" selection-start-column="126" selection-end-line="91" selection-end-column="126" />
               <folding />
             </state>
           </provider>
@@ -223,17 +218,18 @@
       <workItem from="1521661816194" duration="1849000" />
       <workItem from="1521740918361" duration="188000" />
       <workItem from="1521914110555" duration="994000" />
-      <workItem from="1521989647329" duration="4682000" />
+      <workItem from="1521989647329" duration="4880000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23459000" />
+    <option name="totallyTimeSpent" value="23657000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962631" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962631" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -669,16 +665,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="46" column="12" lean-forward="false" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+        <state relative-caret-position="515">
+          <caret line="54" column="9" lean-forward="false" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my_nrrd_work.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="88" column="41" lean-forward="false" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
+        <state relative-caret-position="459">
+          <caret line="91" column="126" lean-forward="false" selection-start-line="91" selection-start-column="126" selection-end-line="91" selection-end-column="126" />
           <folding />
         </state>
       </provider>
