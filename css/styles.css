@@ -44,6 +44,11 @@ body {
     left:0;
     top:60%;
 }
+.leftSeventhRow{
+    position:absolute;
+    left:0;
+    top:70%;
+}
 
 .column {
     float: left;
