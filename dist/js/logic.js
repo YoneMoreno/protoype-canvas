@@ -21,16 +21,29 @@ function init() {
 
     readTextFile("columna01-es-latin1.txt");
 
-    var filename = "models/nrrd/columna02.nrrd"; // change your nrrd file
+    var originalImgPath = getParameterByName('originalImgPath');
+    var filename = originalImgPath || "models/nrrd/columna02.nrrd"; // change your nrrd file
     var idDiv = 'original';
     OriginalImg = new InitCanvas(idDiv, filename);
     OriginalImg.init();
     console.log(OriginalImg);
 
-    filename = "models/nrrd/columnasegmentado02.nrrd"; // change your nrrd file
+    var segmentedImgPath = getParameterByName('segmentedImgPath');
+
+    filename = segmentedImgPath || "models/nrrd/columnasegmentado02.nrrd"; // change your nrrd file
     idDiv = 'segment';
     SegmentImg = new InitCanvas(idDiv, filename);
     SegmentImg.init();
+}
+
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
 var originalCanvas = document.getElementById('original');
