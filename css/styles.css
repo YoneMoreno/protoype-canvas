@@ -19,6 +19,11 @@ body {
     left:0;
     top:50%;
 }
+.leftSecondRow{
+    position:absolute;
+    left:0;
+    top:60%;
+}
 
 .column {
     float: left;
