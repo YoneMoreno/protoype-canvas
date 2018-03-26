@@ -49,7 +49,7 @@ InitCanvas.prototype = {
             this.container.innerWidth = sliceZ.iLength;
             this.container.innerHeight = sliceZ.jLength;
 
-            sliceZ.mesh.material.color.setRGB(0,1,1);
+            sliceZ.mesh.material.color.setRGB(0, 1, 1);
 
 
             console.log('Our slice is: ', sliceZ);
@@ -61,15 +61,9 @@ InitCanvas.prototype = {
         this.scene = scene;
 
 
-
-   
-
-
-
-
-
         // renderer
         this.renderer = new THREE.WebGLRenderer({alpha: true});
+        this.renderTarget = new THREE.WebGLRenderTarget(this.renderer.domElement.clientWidth, this.renderer.domElement.clientHeight);
         this.renderer.setPixelRatio(this.container.devicePixelRatio);
         this.renderer.setSize(this.container.innerWidth, this.container.innerHeight);
 
@@ -77,14 +71,11 @@ InitCanvas.prototype = {
         this.container.appendChild(this.renderer.domElement);
 
 
-
-
-
     },
 
     animate: function () {
 
-        this.renderer.render(this.scene, this.camera);
+        this.renderer.render(this.scene, this.camera, this.renderTarget);
     }
 
 }

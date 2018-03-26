@@ -60,6 +60,7 @@ InitCanvas.prototype = {
 
                 // renderer
                 this.renderer = new THREE.WebGLRenderer({ alpha: true });
+                this.renderTarget = new THREE.WebGLRenderTarget(this.renderer.domElement.clientWidth, this.renderer.domElement.clientHeight);
                 this.renderer.setPixelRatio(this.container.devicePixelRatio);
                 this.renderer.setSize(this.container.innerWidth, this.container.innerHeight);
 
@@ -69,7 +70,7 @@ InitCanvas.prototype = {
 
         animate: function animate() {
 
-                this.renderer.render(this.scene, this.camera);
+                this.renderer.render(this.scene, this.camera, this.renderTarget);
         }
 
 };
