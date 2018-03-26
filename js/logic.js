@@ -57,11 +57,19 @@ function onDocumentMouseDown(event) {
 
     clickCount++;
 
+    let realClickedCanvasX = event.offsetX;
+    let realClickedCanvasY = event.offsetY;
+
     mouse.x = ( ( event.clientX - OriginalImg.renderer.domElement.offsetLeft ) / OriginalImg.renderer.domElement.clientWidth ) * 2 - 1;
     mouse.y = -( ( event.clientY - OriginalImg.renderer.domElement.offsetTop ) / OriginalImg.renderer.domElement.clientHeight ) * 2 + 1
 
-    console.log('Mouse x position is: ', mouse.x, 'the click number was: ', clickCount);
-    console.log('Mouse Y position is: ', mouse.y);
+
+
+    console.log('Mouse x position is: ', realClickedCanvasX, 'the click number was: ', clickCount);
+    console.log('Mouse x position is: ', realClickedCanvasY, 'the click number was: ', clickCount);
+
+    //console.log('Mouse x position is: ', mouse.x, 'the click number was: ', clickCount);
+    //console.log('Mouse Y position is: ', mouse.y);
 
     raycaster.setFromCamera(mouse.clone(), OriginalImg.camera);
     var objects = raycaster.intersectObjects(OriginalImg.scene.children);
