@@ -60,8 +60,25 @@ InitCanvas.prototype = {
 
         this.scene = scene;
 
-        // renderer
 
+
+        var canvas2d = document.createElement('canvas');
+
+        canvas2d.id = "canvas2D";
+        canvas2d.style.width = `${this.container.innerWidth}px`;
+        canvas2d.style.height = `${this.container.innerHeight}px`;
+        canvas2d.style.zIndex = 8;
+
+
+
+
+        this.container.appendChild(canvas2d);
+
+
+
+
+
+        // renderer
         this.renderer = new THREE.WebGLRenderer({alpha: true});
         this.renderer.setPixelRatio(this.container.devicePixelRatio);
         this.renderer.setSize(this.container.innerWidth, this.container.innerHeight);

@@ -50,6 +50,14 @@ var originalCanvas = document.getElementById('original');
 originalCanvas.addEventListener('mousedown', onDocumentMouseDown, false);
 originalCanvas.addEventListener('mouseup', onDocumentMouseUp, false);
 
+var img2D = new Image();
+twoDeeCanvasImage.addEventListener("load", function () {
+    ctx2D.clearRect(0, 0, canvas2D.width, canvas2D.height);
+    ctx2D.drawImage(img2D, 0, 0);
+    // from here, get your pixel data
+});
+img2D.src = OriginalImg.renderer.domElement.toDataURL("img/png");
+
 function onDocumentMouseDown(event) {
     mousePressed = true;
 
