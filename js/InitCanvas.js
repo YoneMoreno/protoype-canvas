@@ -62,17 +62,7 @@ InitCanvas.prototype = {
 
 
 
-        var canvas2d = document.createElement('canvas');
-
-        canvas2d.id = "canvas2D";
-        canvas2d.style.width = `${this.container.innerWidth}px`;
-        canvas2d.style.height = `${this.container.innerHeight}px`;
-        canvas2d.style.zIndex = 8;
-
-
-
-
-        this.container.appendChild(canvas2d);
+   
 
 
 

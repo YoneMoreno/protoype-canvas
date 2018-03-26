@@ -36,43 +36,6 @@ function init() {
     SegmentImg = new InitCanvas(idDiv, filename);
     SegmentImg.init();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    let canvas2D = document.getElementById('canvas2D');
-    let ctx2D = canvas2D.getContext('2d');
-
-    var img2D = new Image();
-    img2D.src = OriginalImg.renderer.domElement.toDataURL("img/png");
-    console.log('Our img 2d source is:::: ',img2D.src);
-    img2D.addEventListener("load", function () {
-        ctx2D.clearRect(0, 0, canvas2D.width, canvas2D.height);
-        ctx2D.drawImage(img2D, 0, 0);
-        // from here, get your pixel data
-        var imgData = ctx2D.getImageData(10, 10, 1, 1);
-        red = imgData.data[0];
-        green = imgData.data[1];
-        blue = imgData.data[2];
-        alpha = imgData.data[3];
-        console.log(red + " " + green + " " + blue + " " + alpha);
-    });
 }
 
 function getParameterByName(name, url) {
@@ -107,6 +70,26 @@ function onDocumentMouseDown(event) {
 
     //console.log('Mouse x position is: ', mouse.x, 'the click number was: ', clickCount);
     //console.log('Mouse Y position is: ', mouse.y);
+
+    var target = OriginalImg.renderer.getRenderTarget();
+    console.log('Our target which should be a WebGLRenderTarget is: ');
+    console.log(target);
+
+    var outputBuffer = new Uint8Array( OriginalImg.renderer.width * OriginalImg.renderer.height * 4 );
+
+    OriginalImg.renderer.readRenderTargetPixels ( target, 0, 0, OriginalImg.renderer.width, OriginalImg.renderer.height, outputBuffer );
+
+    var pixelIndex = ((realClickedCanvasX * OriginalImg.renderer.width) + realClickedCanvasY) * 4;
+
+    var color = {
+        r: outputBuffer[pixelIndex + 0],
+        g: outputBuffer[pixelIndex + 1],
+        b: outputBuffer[pixelIndex + 2],
+        a: outputBuffer[pixelIndex + 3]
+    };
+
+    console.log('Color of clicked pixel is: ');
+    console.log(color);
 
     raycaster.setFromCamera(mouse.clone(), OriginalImg.camera);
     var objects = raycaster.intersectObjects(OriginalImg.scene.children);
