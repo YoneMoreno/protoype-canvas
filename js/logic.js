@@ -35,6 +35,44 @@ function init() {
     idDiv = 'segment';
     SegmentImg = new InitCanvas(idDiv, filename);
     SegmentImg.init();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    let canvas2D = document.getElementById('canvas2D');
+    let ctx2D = canvas2D.getContext('2d');
+
+    var img2D = new Image();
+    img2D.src = OriginalImg.renderer.domElement.toDataURL("img/png");
+    console.log('Our img 2d source is:::: ',img2D.src);
+    img2D.addEventListener("load", function () {
+        ctx2D.clearRect(0, 0, canvas2D.width, canvas2D.height);
+        ctx2D.drawImage(img2D, 0, 0);
+        // from here, get your pixel data
+        var imgData = ctx2D.getImageData(10, 10, 1, 1);
+        red = imgData.data[0];
+        green = imgData.data[1];
+        blue = imgData.data[2];
+        alpha = imgData.data[3];
+        console.log(red + " " + green + " " + blue + " " + alpha);
+    });
 }
 
 function getParameterByName(name, url) {
@@ -52,22 +90,6 @@ originalCanvas.addEventListener('mousedown', onDocumentMouseDown, false);
 originalCanvas.addEventListener('mouseup', onDocumentMouseUp, false);
 
 
-
-
-
-
-var img2D = new Image();
-twoDeeCanvasImage.addEventListener("load", function () {
-    ctx2D.clearRect(0, 0, canvas2D.width, canvas2D.height);
-    ctx2D.drawImage(img2D, 0, 0);
-    // from here, get your pixel data
-});
-img2D.src = OriginalImg.renderer.domElement.toDataURL("img/png");
-
-
-
-
-
 function onDocumentMouseDown(event) {
     mousePressed = true;
 
@@ -78,7 +100,6 @@ function onDocumentMouseDown(event) {
 
     mouse.x = ( ( event.clientX - OriginalImg.renderer.domElement.offsetLeft ) / OriginalImg.renderer.domElement.clientWidth ) * 2 - 1;
     mouse.y = -( ( event.clientY - OriginalImg.renderer.domElement.offsetTop ) / OriginalImg.renderer.domElement.clientHeight ) * 2 + 1
-
 
 
     console.log('Mouse x position is: ', realClickedCanvasX, 'the click number was: ', clickCount);
