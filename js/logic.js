@@ -2,12 +2,10 @@ if (!Detector.webgl) Detector.addGetWebGLMessage();
 
 // global variables for this scripts
 let OriginalImg,
-    SegmentImg,
-    myFileReader;
+    SegmentImg;
 
 var mouse = new THREE.Vector2();
 var raycaster = new THREE.Raycaster();
-var mousePressed = false;
 var clickCount = 0;
 var allText;
 
@@ -33,11 +31,9 @@ function init() {
 
 let originalCanvas = document.getElementById('original');
 originalCanvas.addEventListener('mousedown', onDocumentMouseDown, false);
-originalCanvas.addEventListener('mouseup', onDocumentMouseUp, false);
 
 
 function onDocumentMouseDown(event) {
-    mousePressed = true;
 
     clickCount++;
 
@@ -81,9 +77,7 @@ function onDocumentMouseDown(event) {
     console.log(objects);
 }
 
-function onDocumentMouseUp(event) {
-    mousePressed = false
-}
+
 
 
 function animate() {
