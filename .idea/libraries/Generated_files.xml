@@ -3,15 +3,17 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/dist/js/MyFileReader.js" />
-        <item url="file://$PROJECT_DIR$/dist/js/InitCanvas.js" />
+        <item url="file://$PROJECT_DIR$/dist/js/getURLParameterByName.js" />
         <item url="file://$PROJECT_DIR$/dist/js/logic.js" />
+        <item url="file://$PROJECT_DIR$/dist/js/InitCanvas.js" />
         <item url="file://$PROJECT_DIR$/dist/initCanvases.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/dist/js/MyFileReader.js" />
-      <root url="file://$PROJECT_DIR$/dist/js/InitCanvas.js" />
+      <root url="file://$PROJECT_DIR$/dist/js/getURLParameterByName.js" />
       <root url="file://$PROJECT_DIR$/dist/js/logic.js" />
+      <root url="file://$PROJECT_DIR$/dist/js/InitCanvas.js" />
       <root url="file://$PROJECT_DIR$/dist/initCanvases.js" />
     </CLASSES>
     <SOURCES />
