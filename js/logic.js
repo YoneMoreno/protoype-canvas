@@ -12,8 +12,11 @@ var clickCount = 0;
 var allText;
 
 
+
 init();
 animate();
+
+
 
 
 // initilize the page
@@ -21,20 +24,8 @@ function init() {
 
 
     readTextFile("columna01-es-latin1.txt");
-
-    let originalImgPath = getParameterByName('originalImgPath');
-    let filename = originalImgPath || "models/nrrd/columna02.nrrd"; // change your nrrd file
-    let idDiv = 'original';
-    OriginalImg = new InitCanvas(idDiv, filename);
-    OriginalImg.init();
-    console.log(OriginalImg);
-
-    let segmentedImgPath = getParameterByName('segmentedImgPath');
-
-    filename = segmentedImgPath || "models/nrrd/columnasegmentado02.nrrd"; // change your nrrd file
-    idDiv = 'segment';
-    SegmentImg = new InitCanvas(idDiv, filename);
-    SegmentImg.init();
+    initCanvasOfOriginalImg();
+    initCanvasOfSegmentedImg();
 
 }
 
@@ -61,8 +52,9 @@ function onDocumentMouseDown(event) {
     let realClickedCanvasX = event.offsetX;
     let realClickedCanvasY = event.offsetY;
 
-    mouse.x = ( ( event.clientX - OriginalImg.renderer.domElement.offsetLeft ) / OriginalImg.renderer.domElement.clientWidth ) * 2 - 1;
-    mouse.y = -( ( event.clientY - OriginalImg.renderer.domElement.offsetTop ) / OriginalImg.renderer.domElement.clientHeight ) * 2 + 1
+    let OriginalImgRenderer = OriginalImg.renderer;
+    mouse.x = ( ( event.clientX - OriginalImgRenderer.domElement.offsetLeft ) / OriginalImgRenderer.domElement.clientWidth ) * 2 - 1;
+    mouse.y = -( ( event.clientY - OriginalImgRenderer.domElement.offsetTop ) / OriginalImgRenderer.domElement.clientHeight ) * 2 + 1
 
 
     console.log('Mouse x position is: ', realClickedCanvasX, 'the click number was: ', clickCount);
@@ -71,15 +63,15 @@ function onDocumentMouseDown(event) {
     //console.log('Mouse x position is: ', mouse.x, 'the click number was: ', clickCount);
     //console.log('Mouse Y position is: ', mouse.y);
 
-    var target = OriginalImg.renderer.getRenderTarget();
+    var target = OriginalImgRenderer.getRenderTarget();
     console.log('Our target which should be a WebGLRenderTarget is: ');
     console.log(target);
 
-    var outputBuffer = new Uint8Array( OriginalImg.renderer.width * OriginalImg.renderer.height * 4 );
+    var outputBuffer = new Uint8Array( OriginalImgRenderer.width * OriginalImgRenderer.height * 4 );
 
-    OriginalImg.renderer.readRenderTargetPixels ( target, 0, 0, OriginalImg.renderer.width, OriginalImg.renderer.height, outputBuffer );
+    OriginalImgRenderer.readRenderTargetPixels ( target, 0, 0, OriginalImgRenderer.width, OriginalImgRenderer.height, outputBuffer );
 
-    var pixelIndex = ((realClickedCanvasX * OriginalImg.renderer.width) + realClickedCanvasY) * 4;
+    var pixelIndex = ((realClickedCanvasX * OriginalImgRenderer.width) + realClickedCanvasY) * 4;
 
     var color = {
         r: outputBuffer[pixelIndex + 0],
