@@ -14,6 +14,47 @@ body {
     display:block;
 }
 
+.left {
+    position:absolute;
+    left:0;
+    top:10%;
+}
+.leftSecondRow{
+    position:absolute;
+    left:0;
+    top:20%;
+}
+.leftThirdRow{
+    position:absolute;
+    left:0;
+    top:30%;
+}
+.leftFourthRow{
+    position:absolute;
+    left:0;
+    top:40%;
+}
+.leftFifthRow{
+    position:absolute;
+    left:0;
+    top:50%;
+}
+.leftSixthRow{
+    position:absolute;
+    left:0;
+    top:60%;
+}
+.leftSeventhRow{
+    position:absolute;
+    left:0;
+    top:70%;
+}
+.leftEightRow{
+    position:absolute;
+    left:0;
+    top:80%;
+}
+
 .column {
     float: left;
     width: 50%;
@@ -24,4 +65,14 @@ body {
     content: "";
     display: table;
     clear: both;
+}
+
+canvas {
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+    padding: 0px;
+    position: static; /* fixed or static */
+    top: 100px;
+    left: 100px;
 }
