@@ -19,13 +19,15 @@ animate();
 // initilize the page
 function init ()
 {
-    let filename = "models/nrrd/columna01.nrrd"; // change your nrrd file
+    let originalImgPath = getParameterByName('originalImgPath');
+    let filename = originalImgPath || "models/nrrd/columna02.nrrd"; // change your nrrd file // change your nrrd file
     let idDiv = 'original';
     OriginalImg = new InitCanvas(idDiv, filename );
     OriginalImg.init();
     console.log(OriginalImg);
-    
-    filename = "models/nrrd/columnasegmentado01.nrrd"; // change your nrrd file
+
+    let segmentedImgPath = getParameterByName('segmentedImgPath');
+     filename = segmentedImgPath || "models/nrrd/columnasegmentado02.nrrd"; // change your nrrd file
     idDiv = 'segment';
     SegmentImg = new InitCanvas(idDiv, filename );
     SegmentImg.init(); 
