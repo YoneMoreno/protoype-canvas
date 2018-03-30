@@ -2,7 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff8fec6e-ab22-4d3f-a409-b66de72707d8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/logic.js" afterPath="$PROJECT_DIR$/src/logic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna02.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna03.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna04.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna05.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna06.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna07.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna08.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna09.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna10.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna11.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna12.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna13.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna14.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna15.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna16.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna17.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna18.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna19.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna20.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna21.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columna22.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado02.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado03.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado04.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado05.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado06.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado07.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado08.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado09.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado10.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado11.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado12.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado13.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado14.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado15.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado16.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado17.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado18.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado19.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado20.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado21.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nrrd/columnasegmentado22.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna01.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna03.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna04.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna05.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna06.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna07.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna08.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna09.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna10.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna11.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna12.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna13.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna14.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna15.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna15.nrrd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna16.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna17.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna18.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna19.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna20.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna21.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/png/columna22.PNG" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,47 +82,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="77" column="1" lean-forward="false" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="103" column="41" lean-forward="false" selection-start-line="103" selection-start-column="41" selection-end-line="103" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InitCanvas.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="InitCanvas.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/InitCanvas.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1666">
-              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logic.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/logic.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-510">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>my_nrrd_work</find>
+      <find>here</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>index</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -68,8 +113,8 @@
         <option value="$PROJECT_DIR$/js/InitCanvas.js" />
         <option value="$PROJECT_DIR$/js/logic.js" />
         <option value="$PROJECT_DIR$/css/styles.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/logic.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -122,6 +167,11 @@
             <path>
               <item name="prototype_ThreejswithoutReact" type="b2602c69:ProjectViewProjectNode" />
               <item name="prototype_ThreejswithoutReact" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="prototype_ThreejswithoutReact" type="b2602c69:ProjectViewProjectNode" />
+              <item name="prototype_ThreejswithoutReact" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -137,6 +187,9 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\YonePC\Downloads\prototype_ThreejswithoutReact" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\YonePC\Downloads\prototype_ThreejswithoutReact\src" />
     </key>
@@ -171,7 +224,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3016000" />
+    <option name="totallyTimeSpent" value="3299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
@@ -184,7 +237,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Floobits" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -512,24 +565,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
+        <state relative-caret-position="396">
           <caret line="77" column="1" lean-forward="false" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="103" column="41" lean-forward="false" selection-start-line="103" selection-start-column="41" selection-end-line="103" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/InitCanvas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1666">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -538,7 +575,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -546,6 +582,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-510">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="98" column="16" lean-forward="false" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InitCanvas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
           <folding />
         </state>
       </provider>
