@@ -1,0 +1,27 @@
+{
+  "name": "prototype",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YoneMoreno/protoype-canvas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YoneMoreno/protoype-canvas/issues"
+  },
+  "homepage": "https://github.com/YoneMoreno/protoype-canvas#readme",
+  "dependencies": {
+    "es6-module-loader": "^0.17.11",
+    "traceur": "0.0.111"
+  },
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
