@@ -1,5 +1,7 @@
 "use strict";
 
+var _InitCanvas = require("./InitCanvas.js");
+
 if (!Detector.webgl) Detector.addGetWebGLMessage();
 
 // global variables for this scripts
@@ -17,13 +19,13 @@ animate();
 function init() {
     var filename = "models/nrrd/columna01.nrrd"; // change your nrrd file
     var idDiv = 'original';
-    OriginalImg = new InitCanvas(idDiv, filename);
+    OriginalImg = new _InitCanvas.InitCanvas(idDiv, filename);
     OriginalImg.init();
     console.log(OriginalImg);
 
     filename = "models/nrrd/columnasegmentado01.nrrd"; // change your nrrd file
     idDiv = 'segment';
-    SegmentImg = new InitCanvas(idDiv, filename);
+    SegmentImg = new _InitCanvas.InitCanvas(idDiv, filename);
     SegmentImg.init();
 }
 

@@ -1,3 +1,5 @@
+import {InitCanvas} from "./InitCanvas.js";
+
 if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 
 // global variables for this scripts

@@ -7,18 +7,18 @@
         <link rel="stylesheet" href="css/styles.css">
     
         <!-- load the libraries and js -->
-		<script src="js/libs/three.js"></script>
+		<script src="src/libs/three.js"></script>
     
-        <script src="js/Volume.js"></script>
-        <script src="js/VolumeSlice.js"></script>
-        <script src="js/loaders/NRRDLoader.js"></script>
+        <script src="src/Volume.js"></script>
+        <script src="src/VolumeSlice.js"></script>
+        <script src="src/loaders/NRRDLoader.js"></script>
 
-        <script src="js/Detector.js"></script>
-        <script src="js/libs/stats.min.js"></script>
-        <script src="js/libs/gunzip.min.js"></script>
-        <script src="js/libs/dat.gui.min.js"></script>
+        <script src="src/Detector.js"></script>
+        <script src="src/libs/stats.min.js"></script>
+        <script src="src/libs/gunzip.min.js"></script>
+        <script src="src/libs/dat.gui.min.js"></script>
     
-        <script src="js/InitCanvas.js"></script>
+        <script src="src/InitCanvas.js"></script>
 
         <!-- Transpiler and loader to work with ES6 -->
         <script src="node_modules/traceur/bin/traceur.js"></script>
@@ -42,9 +42,7 @@
             </div>
           </div> 
 
-        <script>
-            System.import('js/logic.js');
-        </script>
+        <script src="src/logic.js" type="module"></script>
 
 	</body>
 </html>
